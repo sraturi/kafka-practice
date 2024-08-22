@@ -1,3 +1,5 @@
+Simple springframework to test out kafka. Flow: make http request to send a log -> kafka producer -> kafka consumer -> mongodb. Fetch list of from http endpoint.
+
 # Getting Started
 ### Docker
 * `docker compose up zookeeper -d`
@@ -7,6 +9,7 @@
 * `./gradlew bootRun`
 ### Make requests
 *  `curl -X POST http://localhost:8080/logs -H "Content-Type: application/json" -d '"Log message from Service B"'`
+*  `curl -X GET http://localhost:8080/logs`
 
 
 ### Reference Documentation
