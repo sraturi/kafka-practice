@@ -2,6 +2,7 @@
 ### Docker
 * `docker compose up zookeeper -d`
 * `docker compose up kafka`
+* `docker compose up mongodb -d`
 ### Run application
 * `./gradlew bootRun`
 ### Make requests

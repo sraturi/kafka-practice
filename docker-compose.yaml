@@ -18,3 +18,14 @@ services:
 #      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
     ports:
       - "9092:9092"
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - 27019:27017
+    volumes:
+      - mongo-kafka-data:/data/db
+
+volumes:
+  mongo-kafka-data:
